@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "nunki_backend": {
+      "main": "src/nunki_backend/main.mo",
+      "type": "motoko"
+    },
+    "nunki_frontend": {
+      "dependencies": [
+        "nunki_backend"
+      ],
+      "source": [
+        "src/nunki_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "nunki_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
